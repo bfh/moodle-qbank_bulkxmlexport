@@ -15,7 +15,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 namespace qbank_bulkxmlexport;
+use core_question\local\bank\bulk_action_base;
 use core_question\local\bank\plugin_features_base;
+use core_question\local\bank\view;
 
 /**
  * Class plugin_feature is the entrypoint for the features.
@@ -31,7 +33,8 @@ class plugin_feature extends plugin_features_base {
      *
      * @return bulk_action_base[]
      */
-    public function get_bulk_actions(): array {
+    #[\Override]
+    public function get_bulk_actions(?view $qbank = null): array {
         return [
             new xmlexport(),
         ];
