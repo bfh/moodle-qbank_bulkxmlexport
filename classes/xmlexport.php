@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 namespace qbank_bulkxmlexport;
-
+use core_question\local\bank\bulk_action_base;
 /**
  * Class bulk_move_action is the base class for moving questions.
  *
@@ -23,7 +23,7 @@ namespace qbank_bulkxmlexport;
  * @copyright  2024 Stephan Robotta
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class xmlexport extends \core_question\local\bank\bulk_action_base {
+class xmlexport extends bulk_action_base {
 
     /**
      * The key for the action.

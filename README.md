@@ -14,9 +14,9 @@ This project was created at DevCamp at MoodleMoot DACH 2024.
 
 ## Requirements
 
-This plugin requires Moodle 4.4.
+This plugin requires Moodle 5.0.
 
-It will probably work with a lower version of the 4.x branches, however, this was not tested. In case you want to use it with a lower version, please adapt the `version.php`.
+This is the version for Moodle 5.0, if you have Moodle 4.4 or 4.5 please use the appropriate version of this plugin.
 
 ## Motivation for this report
 
@@ -32,6 +32,10 @@ Then visit the admin notification page to complete the installation.
 See http://docs.moodle.org/en/Installing_plugins for details on installing Moodle plugins
 
 ## Version History
+
+### 0.5
+
+- Adaptions for the upcomming Moodle 5.0 with changes in the Question bank.
 
 ### 0.4
 
