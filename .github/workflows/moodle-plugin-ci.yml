@@ -30,20 +30,28 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          - php: 8.4
+            moodle-branch: MOODLE_500_STABLE
+            database: pgsql
+            plugin-ci: ^4
+          - php: 8.4
+            moodle-branch: MOODLE_500_STABLE
+            database: mariadb
+            plugin-ci: ^4
           - php: 8.3
-            moodle-branch: main
+            moodle-branch: MOODLE_500_STABLE
             database: pgsql
             plugin-ci: ^4
           - php: 8.3
-            moodle-branch: main
+            moodle-branch: MOODLE_500_STABLE
             database: mariadb
             plugin-ci: ^4
           - php: 8.2
-            moodle-branch: main
+            moodle-branch: MOODLE_500_STABLE
             database: pgsql
             plugin-ci: ^4
           - php: 8.2
-            moodle-branch: main
+            moodle-branch: MOODLE_500_STABLE
             database: mariadb
             plugin-ci: ^4
 
@@ -74,7 +82,7 @@ jobs:
         env:
           DB: ${{ matrix.database }}
           MOODLE_BRANCH: ${{ matrix.moodle-branch }}
-          IGNORE_PATHS: moodle/tests/fixtures,moodle/Sniffs
+          IGNORE_PATHS: moodle/tests/fixtures
 
       - name: PHP Lint
         if: ${{ always() }}

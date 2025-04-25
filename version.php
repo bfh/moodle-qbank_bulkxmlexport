@@ -25,8 +25,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'qbank_bulkxmlexport';
-$plugin->release = '0.5 for Moodle 5.0';
-$plugin->version = 2024120700;
+$plugin->release = '0.5';
+$plugin->version = 2025042500;
 $plugin->requires = 2024120500;
 $plugin->supported = [500, 500];
-$plugin->maturity = MATURITY_RC;
+$plugin->maturity = MATURITY_STABLE;
