@@ -32,7 +32,8 @@ Feature: Use the plugin to export several question at once in the qbank manager.
     And I am on the "C1" "Course" page
     And I navigate to "Question banks" in current page administration
     And I click on "Qbank 1" "link"
-    And I click on "input[type='checkbox']" "css_element" in the "First question" "table_row"
+    And I apply question bank filter "Category" with value "Default for C1"
+    And I click on "First question" "checkbox"
     And I click on "With selected" "button"
     Then I should not see question bulk action "bulkxmlexport"
     And I navigate to "Plugins > Question bank plugins > Manage question bank plugins" in site administration
@@ -40,7 +41,8 @@ Feature: Use the plugin to export several question at once in the qbank manager.
     And I am on the "C1" "Course" page
     And I navigate to "Question banks" in current page administration
     And I click on "Qbank 1" "link"
-    And I click on "input[type='checkbox']" "css_element" in the "First question" "table_row"
+    And I apply question bank filter "Category" with value "Default for C1"
+    And I click on "First question" "checkbox"
     And I click on "With selected" "button"
     Then I should see question bulk action "bulkxmlexport"
 
@@ -49,6 +51,7 @@ Feature: Use the plugin to export several question at once in the qbank manager.
     And I am on the "C1" "Course" page logged in as "teacher1"
     And I navigate to "Question banks" in current page administration
     And I click on "Qbank 1" "link"
+    And I apply question bank filter "Category" with value "Default for C1"
     And I should see "First question"
     And I should not see "Essay Foo Bar"
     And I click on "Also show questions from subcategories" "checkbox"
