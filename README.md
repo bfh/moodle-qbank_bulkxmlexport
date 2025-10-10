@@ -3,7 +3,7 @@
 [![Latest Release](https://img.shields.io/github/v/release/bfh/moodle-qbank_bulkxmlexport?sort=semver&color=orange)](https://github.com/bfh/moodle-qbank_bulkxmlexport/releases)
 [![Moodle Plugin CI](https://github.com/bfh/moodle-qbank_bulkxmlexport/actions/workflows/moodle-plugin-ci.yml/badge.svg)](https://github.com/bfh/moodle-qbank_bulkxmlexport/actions/workflows/moodle-plugin-ci.yml)
 [![PHP Support](https://img.shields.io/badge/php-8.1--8.4-blue)](https://github.com/bfh/moodle-qbank_bulkxmlexport/actions)
-[![Moodle Support](https://img.shields.io/badge/Moodle-5.0-orange)](https://github.com/bfh/moodle-qbank_bulkxmlexport/actions)
+[![Moodle Support](https://img.shields.io/badge/Moodle-5.0+-orange)](https://github.com/bfh/moodle-qbank_bulkxmlexport/actions)
 [![License GPL-3.0](https://img.shields.io/github/license/bfh/moodle-qbank_bulkxmlexport?color=lightgrey)](https://github.com/bfh/moodle-qbank_bulkxmlexport/blob/main/LICENSE)
 [![GitHub contributors](https://img.shields.io/github/contributors/bfh/moodle-qbank_bulkxmlexport)](https://github.com/bfh/moodle-qbank_bulkxmlexport/graphs/contributors)
 
@@ -32,6 +32,10 @@ Then visit the admin notification page to complete the installation.
 See http://docs.moodle.org/en/Installing_plugins for details on installing Moodle plugins
 
 ## Version History
+
+### 0.6
+
+- Add Mooodle 5.1 support.
 
 ### 0.5
 
