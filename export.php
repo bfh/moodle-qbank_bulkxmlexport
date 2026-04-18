@@ -39,7 +39,7 @@ $category = optional_param('category', null, PARAM_SEQUENCE);
 \core_question\local\bank\helper::require_plugin_enabled('qbank_bulkxmlexport');
 
 if ($cmid) {
-    list($module, $cm) = get_module_from_cmid($cmid);
+    [$module, $cm] = get_module_from_cmid($cmid);
     require_login($cm->course, false, $cm);
     $thiscontext = context_module::instance($cmid);
 } else if ($courseid) {

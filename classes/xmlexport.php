@@ -24,7 +24,6 @@ use core_question\local\bank\bulk_action_base;
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class xmlexport extends bulk_action_base {
-
     /**
      * The key for the action.
      */
