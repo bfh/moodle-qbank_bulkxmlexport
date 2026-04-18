@@ -8,7 +8,7 @@ jobs:
 
     services:
       postgres:
-        image: postgres:15
+        image: postgres:16
         env:
           POSTGRES_USER: 'postgres'
           POSTGRES_HOST_AUTH_METHOD: 'trust'
@@ -30,6 +30,22 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          - php: 8.4
+            moodle-branch: MOODLE_502_STABLE
+            database: pgsql
+            plugin-ci: ^4
+          - php: 8.4
+            moodle-branch: MOODLE_502_STABLE
+            database: mariadb
+            plugin-ci: ^4
+          - php: 8.3
+            moodle-branch: MOODLE_502_STABLE
+            database: pgsql
+            plugin-ci: ^4
+          - php: 8.3
+            moodle-branch: MOODLE_502_STABLE
+            database: mariadb
+            plugin-ci: ^4
           - php: 8.4
             moodle-branch: MOODLE_501_STABLE
             database: pgsql
@@ -148,4 +164,3 @@ jobs:
       - name: Behat features
         if: ${{ always() }}
         run: moodle-plugin-ci behat --profile chrome
-

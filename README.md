@@ -33,6 +33,10 @@ See http://docs.moodle.org/en/Installing_plugins for details on installing Moodl
 
 ## Version History
 
+### 0.7
+
+- Add Mooodle 5.2 support.
+
 ### 0.6
 
 - Add Mooodle 5.1 support.

@@ -25,8 +25,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'qbank_bulkxmlexport';
-$plugin->release = '0.6';
-$plugin->version = 2025101001;
+$plugin->release = '0.7';
+$plugin->version = 2026041800;
 $plugin->requires = 2024120500;
-$plugin->supported = [406, 501];
+$plugin->supported = [406, 502];
 $plugin->maturity = MATURITY_STABLE;
